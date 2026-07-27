@@ -1,0 +1,192 @@
+*{
+
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+html{
+
+    font-size: 10px;
+
+
+}
+
+.logoo{
+
+    width: 12rem;
+    margin-left: 2rem;
+    cursor: pointer;
+
+}
+
+header{
+
+    background-color: #E0F5FA;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+ul li{
+
+        list-style: none;
+        display: inline;
+        font-size: 2rem;
+        margin: 0.8rem;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        color: #101f74;
+
+}
+
+li:hover{
+
+    text-decoration: underline;
+    font-size: 2.5rem;
+    transform: scale(1.25);
+
+}
+
+.botao{
+
+    padding: 1.5rem;
+    background-color: #FABB33;
+    border: none;
+    border-radius: 1.4rem;
+    color: #1A2876;
+      font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  margin-right: 2rem;
+  transition: 0.2s ease;
+  font-size: 1.5rem;
+
+}
+
+.botao:hover{
+
+    transform: scale(1.1);
+
+}
+
+.espacofrase{
+
+height: 40rem;
+background-color: #1A2876;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+
+
+}
+
+.fraseefeito{
+
+color: white;
+font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 6rem;
+  text-align: center;
+
+}
+
+span{
+
+    color: #FABB33;
+
+}
+
+.botao1{
+
+        padding: 1.8rem;
+        background-color: #ffffff;
+        border: none;
+        border-radius: 1.4rem;
+        color: #1A2876;
+        font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    margin-right: 2rem;
+    transition: 0.2s ease;
+    font-size: 1.5rem;
+
+}
+
+.botao2{
+
+     padding: 1.8rem;
+    background-color: #FABB33;
+    border: none;
+    border-radius: 1.4rem;
+    color: #1A2876;
+      font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-right: 2rem;
+  transition: 0.2s ease;
+
+}
+
+.botao1:hover{
+
+    transform: scale(1.1);
+
+
+}
+
+.botao2:hover{
+
+    transform: scale(1.1);
+
+
+}
+
+.conheca{
+
+    background-color: #E0F5FA;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+
+}
+
+.fraseefeito1{
+
+color: #1A2876;
+font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+
+}
+
+.frasefrei{
+
+    color: #3749AE;
+font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 3.5rem;
+  text-align: center;
+
+
+}
