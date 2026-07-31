@@ -972,8 +972,6 @@ font-family: "Montserrat", sans-serif;
     margin-bottom: auto; /* Empurra o botão para o final do card */
     
     /* Limita a 5 linhas de texto e corta com reticências (...) */
-    display: -webkit-box;
-    -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
