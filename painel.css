@@ -68,9 +68,40 @@ body {
     transition: 0.3s;
 }
 
-.volt:hover {
-    background: #f2f2f2;
+.botao1{
+
+    margin-left: auto;
+    width: 5rem;
+    height: 2rem;
+    border: 0.08rem solid #dcdcdc;
+    border-radius: 0.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: 0.3s;
+ border: none;
+    
+   
+
 }
+a {
+    text-decoration: none;
+    color: inherit;
+    font-family: "Inter", sans-serif;
+
+    
+}
+
+.botao1:hover {
+    background: #f2f2f2;
+    transform: scale(1.2);
+
+    
+}
+
+
 
 .parte {
     width: 25rem;
