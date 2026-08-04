@@ -91,7 +91,7 @@ a {
     color: inherit;
     font-family: "Inter", sans-serif;
 
-    
+
 }
 
 .botao1:hover {
@@ -207,4 +207,16 @@ a {
     font-size: 0.8rem;
     font-weight: 500;
     color: #1f3b82;
+}
+.email input,
+.senha input{
+    width: 100%;
+    background-color: transparent !important;
+    border: none !important;
+    outline: none;
+    box-shadow: none;
+    appearance: none;
+    -webkit-appearance: none;
+    font-size: 1.3rem;
+    color: #555;
 }
