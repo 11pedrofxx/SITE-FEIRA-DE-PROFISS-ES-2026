@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feira de Profissões</title>
@@ -23,7 +21,11 @@
 
         <img class="logoo" src="./pictures/Logo_Feira_das_Profissoes_2026_-_PNG_Vetor_-_FINAL.webp" alt="">
 
-        <ul>
+        <button class="menu-mobile" aria-label="Abrir menu" aria-expanded="false" type="button">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <ul class="menu-principal">
             <li>inicio</li>
             <li>programações</li>
             <li>cursos</li>
@@ -32,19 +34,19 @@
 
         </ul>
 
-       <a href="painel.html"> <button class="botao">Acesso Administrativo</button></a>
+       <a href="menu1.html"> <button class="botao">Acesso Administrativo</button></a>
 
     </header>
 
-    <div class="espacofrase" >
+    <div class="espacofrase">
 
-        <h1 class="fraseefeito" ><span class="spandiferente">Feira Das Profissões:</span> Onde o <br><span>conhecimento</span> encontra as <br><span>oportunidades.</span></h1>
+        <h1 class="fraseefeito"><span class="spandiferente">Feira Das Profissões:</span> Onde o <br><span>conhecimento</span> encontra as <br><span>oportunidades.</span></h1>
 
         <div class="botoes">
 
             <br>
             <button class="botao1">Ver programação</button>
-            <button class="botao2">Fazer minha inscrição</button>
+            <a href="inscrever.html"><button class="botao2">Fazer minha inscrição</button></a>
         </div>
         
     </div>
@@ -71,7 +73,7 @@
     </div>
 
     <div class="freiright">
-        <img class="fotoo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwluqahWaDmjYGC-e102yHpQthdFZfim8XpCwaGO4zcaBrd-BsTmZijpvd&s=10" alt="Frei Xavier">
+        <img class="fotoo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwluqahWaDmjYGC-e102yHpQthdFZfim8XpCwaGO4zcaBrd-BsTmZijpvd&amp;s=10" alt="Frei Xavier">
 
         <h2>Frei Xavier</h2>
         <h3>Fundador do Instituto Social Nossa Senhora de Fátima</h3>
@@ -83,14 +85,14 @@
 
         <h1 class="Fraseestru">Nossa Estrutura</h1>
 
-        <p class="frasesalas" >Conheça nossas salas <span>moderna</span> e espaços de <span>aprendizado</span></p>
+        <p class="frasesalas">Conheça nossas salas <span>moderna</span> e espaços de <span>aprendizado</span></p>
 
 
     </div>
 
     <div class="quadrados">
 
-        <div class="boxleft" >
+        <div class="boxleft">
 
             <nav class="topo">
                 <img src="./pictures/tecnologia.png" alt="">
@@ -101,7 +103,7 @@
 
         </div>
 
-          <div class="boxright" >
+          <div class="boxright">
 
             <nav class="topo">
                 <img src="./pictures/salas.png" alt="">
@@ -116,13 +118,13 @@
 
     </div>
 
-    <nav class="Modric" >
+    <nav class="Modric">
 
         <img class="wfrei" src="./pictures/frei.jpg" alt="">
 
         <br><br><br>
     
-        <div class="boxbaixa" >
+        <div class="boxbaixa">
 
             <nav class="topo">
                 <img src="./pictures/vecteezy_auditorium-vector-icon-design_16952346.jpg" alt="">
@@ -141,7 +143,7 @@
 
         <h1 class="Fraseestru">Depoimentos</h1>
 
-        <p class="frasedep" >Conheça as histórias de <span>sucesso</span> de quem <span>transformou</span> sua vida profissional <span>conosco</span></p>
+        <p class="frasedep">Conheça as histórias de <span>sucesso</span> de quem <span>transformou</span> sua vida profissional <span>conosco</span></p>
 
 
     </div>
@@ -600,5 +602,18 @@
     </div> <!-- Fim ro-container -->
 </footer>
 
-</body>
-</html>-
+
+<script>
+    const menuButton = document.querySelector('.menu-mobile');
+    const menu = document.querySelector('.menu-principal');
+
+    menuButton.addEventListener('click', () => {
+        const aberto = menu.classList.toggle('menu-aberto');
+        menuButton.setAttribute('aria-expanded', aberto);
+        menuButton.innerHTML = aberto
+            ? '<i class="fas fa-times"></i>'
+            : '<i class="fas fa-bars"></i>';
+    });
+</script>
+
+-</body></html>

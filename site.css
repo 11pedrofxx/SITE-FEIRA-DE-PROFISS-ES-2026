@@ -52,6 +52,8 @@ ul li{
 
 }
 
+
+
 li:hover{
 
     text-decoration: underline;
@@ -1181,3 +1183,143 @@ font-family: "Montserrat", sans-serif;
     text-align: right;
     justify-content: flex-end; /* Alinha o conteúdo à direita se for flex */
 }   
+
+/* =========================================================
+   RESPONSIVIDADE — adicionada sem alterar o layout desktop
+   ========================================================= */
+@media (max-width: 1200px) {
+  .paii { padding: 5rem 4rem; gap: 3rem; }
+  .container-localizacao { padding: 0 4rem; }
+  .cs-container, .np-container, .ro-container { padding-left: 2rem; padding-right: 2rem; }
+  .cs-card { width: 34rem; }
+}
+
+@media (max-width: 768px) {
+  header { flex-wrap: wrap; padding: 1.5rem 2rem; gap: 1.5rem; }
+  .logoo { margin-left: 0; width: 11rem; }
+  header ul { display: flex; flex-wrap: wrap; justify-content: center; gap: .4rem; padding: 0; }
+  ul li { font-size: 1.5rem; margin: .3rem .5rem; }
+  .botao { margin-right: 0; padding: 1.2rem; }
+
+  .espacofrase { height: auto; min-height: 40rem; padding: 5rem 2rem; }
+  .fraseefeito { font-size: clamp(3rem, 7vw, 4.8rem); }
+  .botoes { display: flex; flex-direction: column; gap: 1.2rem; width: min(100%, 34rem); }
+  .botoes br { display: none; }
+  .botao1, .botao2 { margin-right: 0; width: 100%; }
+
+  .conheca { height: auto; min-height: 25rem; padding: 5rem 2rem; }
+  .fraseefeito1 { font-size: clamp(3rem, 7vw, 4rem); }
+  .frasefrei { font-size: 2.2rem; line-height: 1.4; }
+
+  .paii { flex-direction: column; padding: 5rem 2rem; gap: 4rem; }
+  .fraseleft { width: 100%; }
+  .fraseleft h1 { font-size: 3.8rem; }
+  .fraseleft p { font-size: 1.9rem; }
+  .freiright { width: 100%; max-width: 46rem; }
+
+  .espacoo { height: auto; min-height: 18rem; padding: 4rem 2rem; }
+  .Fraseestru { font-size: 3.8rem; }
+  .frasesalas, .frasedep { font-size: 2rem; text-align: center; }
+  .quadrados { flex-direction: column; align-items: center; gap: 2rem; padding: 0 2rem; }
+  .boxleft, .boxright, .boxbaixa { width: 100%; max-width: 57rem; height: auto; min-height: 15rem; margin-left: 0; padding: 2rem; }
+  .topo { gap: 2rem; }
+  .topo h1 { font-size: 2rem; }
+  .boxleft p, .boxright p, .boxbaixa p { font-size: 1.8rem; }
+  .Modric { width: 100%; padding: 0 2rem; }
+  .wfrei { width: 100%; max-width: 38rem; height: auto; }
+
+  .banner { height: auto; }
+  .conteudo { flex-direction: column; padding: 4rem 2rem; }
+  .conteudo > div:first-child img { max-width: 100%; height: auto; }
+  .textos { margin-top: 2rem; }
+  .textos h3 { font-size: 1.8rem; line-height: 1.5; }
+  .textos p { font-size: 1.6rem; }
+
+  .container-localizacao { flex-direction: column; padding: 0 2rem; gap: 2rem; }
+  .mapa-feira, .card-infos { width: 100%; }
+  .mapa-feira { min-height: 30rem; }
+  .mapa-feira img { height: auto; min-height: 30rem; }
+  .card-infos { padding: 3rem 2.5rem; }
+
+  .container-cronograma { padding: 0 2rem; }
+  .titulo-cronograma { font-size: 3.8rem; }
+  .subtitulo-cronograma { font-size: 2.1rem; }
+  .atividade-item { align-items: flex-start; gap: 1.5rem; }
+  .marcador-timeline { width: 5rem; height: 5rem; margin-right: 0; }
+  .card-atividade { padding: 2rem; flex-direction: column; align-items: flex-start; gap: .8rem; }
+  .card-atividade h3 { margin-right: 0; font-size: 2.3rem; }
+  .card-atividade p { font-size: 1.8rem; }
+
+  .cs-secao, .np-secao { padding: 6rem 0; }
+  .cs-titulo-principal, .np-titulo { font-size: 4rem; }
+  .cs-subtitulo-principal { font-size: 2.2rem; }
+  .cs-subtitulo-categoria { font-size: 3rem; }
+  .cs-card { width: 100%; max-width: 36rem; min-height: auto; }
+  .np-logo-card { width: 100%; max-width: 32rem; }
+  .ro-grid { flex-direction: column; }
+  .ro-coluna { width: 100%; min-width: 0; }
+}
+
+@media (max-width: 480px) {
+  html { font-size: 9px; }
+  header { padding: 1.5rem; }
+  .logoo { width: 10rem; }
+  header ul { width: 100%; }
+  ul li { font-size: 1.35rem; }
+  .botao { width: 100%; }
+  .fraseefeito { font-size: 3rem; }
+  .fraseefeito1 { font-size: 3rem; }
+  .frasefrei { font-size: 1.9rem; }
+  .fraseleft h1 { font-size: 3.3rem; }
+  .fraseleft p { font-size: 1.7rem; }
+  .freiright { padding: 1.8rem; }
+  .fotoo { height: 30rem; }
+  .Fraseestru { font-size: 3.2rem; }
+  .boxleft, .boxright, .boxbaixa { padding: 1.8rem; }
+  .topo { gap: 1.5rem; }
+  .topo img { width: 3rem; margin-left: 0; }
+  .topo h1 { font-size: 1.8rem; }
+  .boxleft p, .boxright p, .boxbaixa p { font-size: 1.6rem; }
+  .textos h3 { font-size: 1.7rem; }
+  .card-infos h1 { font-size: 2.7rem; }
+  .card-infos h3.subtitulo-card { font-size: 1.7rem; }
+  .bloco-info h4 { font-size: 1.9rem; }
+  .bloco-info p { font-size: 1.6rem; }
+  .titulo-cronograma { font-size: 3.2rem; }
+  .subtitulo-cronograma { font-size: 1.8rem; }
+  .atividade-item { gap: 1rem; }
+  .marcador-timeline { width: 4.2rem; height: 4.2rem; }
+  .icone-atividade { font-size: 2rem; }
+  .card-atividade { padding: 1.7rem; }
+  .card-atividade h3 { font-size: 2rem; }
+  .card-atividade p { font-size: 1.6rem; }
+  .cs-titulo-principal, .np-titulo { font-size: 3.3rem; }
+  .cs-subtitulo-categoria { font-size: 2.6rem; }
+  .cs-card { padding: 2.5rem; }
+  .cs-card-titulo { font-size: 2.2rem; }
+  .cs-info-item { font-size: 1.6rem; }
+  .np-logo-card { height: 16rem; }
+}
+
+
+/* Menu mobile */
+.menu-mobile {
+    display: none;
+    border: none;
+    background: transparent;
+    color: #101f74;
+    font-size: 2.6rem;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    header { position: relative; }
+    .menu-mobile { display: block; }
+    .menu-principal {
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu-principal.menu-aberto { display: flex; }
+}
