@@ -16,6 +16,8 @@ body{
 html{
 
     font-size: 10px;
+    scroll-behavior: smooth;
+
 
 }
 
@@ -24,6 +26,12 @@ html{
     width: 12rem;
     margin-left: 2rem;
     cursor: pointer;
+
+}
+
+a{
+
+    text-decoration: none;
 
 }
 
